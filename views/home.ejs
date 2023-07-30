@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/home.css">
+
+<div class="habits-div">
+    <div class="add-habits">
+        <form action="/add-habit" method="POST">
+        <input type="text" autocomplete="off" id="habitCreate" name="habit_name" placeholder="Enter Habit..." required>
+        <button type="submit" onclick="newElement()" class="addBtn">Add</buton>
+        </form>
+    </div>
+
+<div class="tasks-div" id="">
+    <ul class="task-list" id="set_alarms_details">
+        <% if (habit_list.length > 0) {%>
+       <% for (let habit of habit_list){ %>
+        <li class="task-detail">
+            <span>
+                <a href="/delete-habit/?id=<%=habit._id%>">
+                    <i class="fa-solid fa-trash fa-xl delete-icon"></i>
+                </a>
+                <h3  onclick="location.href='/view-habit/?id=<%=habit._id%>'">  
+                    <%=habit.habit_name%> 
+                </h3>
+            </span> 
+                <i class="fa-solid fa-face-smile streak-icon"></i>
+        </li >
+        <% } %> 
+        <%} else { %>
+            <li class=""  style="border-bottom: none; text-align: center;">
+                <span>
+                    <h3 style="text-align: center;">   
+                        Please Add Some Habits
+                    </h3>
+                </span> 
+            </li >
+            <%} %>
+    </ul>
+</div>
+</div>

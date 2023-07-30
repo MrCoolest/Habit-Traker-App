@@ -1,0 +1,132 @@
+.habits-div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-habits {
+  padding: 10px;
+}
+
+.add-habits input {
+  padding: 7px;
+  width: 20rem;
+  outline: none;
+  border-radius: 20px;
+}
+
+.add-habits button {
+  width: 5rem;
+  padding: 10px;
+  background-color: rgb(187, 187, 187);
+  border-radius: 50px;
+  color: aliceblue;
+  border: none;
+}
+
+.add-habits button:hover {
+  background-color: rgb(54, 54, 54);
+}
+
+.tasks-div {
+  width: 440px;
+  padding: 30px 30px 38px;
+  background: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.task-list ul {
+  margin: 0 10px;
+}
+
+.task-list li {
+  list-style-type: none;
+  text-align: left;
+  border-bottom: 2px solid grey;
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.task-list li a {
+  padding: 0;
+  display: inline-flex;
+}
+
+.task-list li a .delete-icon {
+  margin: auto;
+  padding-right: 10px;
+  color: #ccc;
+}
+
+.task-list li a .delete-icon:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.task-detail {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 15px;
+  /* border-radius: 10%; */
+}
+
+.task-detail span {
+  display: flex;
+  flex-direction: row;
+}
+
+.task-detail span h3 {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.streak-icon {
+  color: #e25822;
+  /* background-color: yellow; */
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+.date-container {
+  display: flex;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+.date-container div {
+  display: inline-flex;
+}
+.date-container div .date-picker {
+  font-size: 1rem;
+  background-color: rgba(43, 40, 40, 0.473);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+.date-container .fas {
+  color: white;
+  font-size: large;
+  position: relative;
+}
+.date-container .fa-search {
+  color: black;
+}
+.date-container button {
+  border: none;
+  background-color: white;
+}
+
+
+.status {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  position: initial;
+}
