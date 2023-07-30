@@ -17,6 +17,7 @@ A basic Habit Tracking System. Tech Stack : HTML, CSS, JS, Node.js
 - SCSS
 - NodeJS
 - Express
+- Mongodb
 
 ## How-To-Use
 
