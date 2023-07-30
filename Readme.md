@@ -1,4 +1,4 @@
-# Habit-Tracker
+# Habit-Traker-App
 You cannot able to keep your habit or want to create new habit.
 Then try this amazing app Habit Tracker
 
@@ -6,11 +6,11 @@ A basic Habit Tracking System. Tech Stack : HTML, CSS, JS, Node.js
 
 ### Home :
 
-![alt text](home.png)
+![alt text](home.PNG)
 
 ### Habit :
 
-![alt text](rotine.png)
+![alt text](rotine.PNG)
 
 ## Technology Stack
 - EJS
@@ -25,7 +25,7 @@ A basic Habit Tracking System. Tech Stack : HTML, CSS, JS, Node.js
 - Run the Mongo Server.
 - Navigate to Project Directory
     ```
-    cd Habit-Tracker
+    cd Habit-Traker-App
     ```
 - run following commands :
     ```
@@ -42,34 +42,41 @@ A basic Habit Tracking System. Tech Stack : HTML, CSS, JS, Node.js
 This code follows MVC pattern and hence everything is differentiated and well managed:
 
     Habit_tracker
-        |-----assets
-        |       |--- css
-        |       |     |-- habit.css
-        |       |     |-- home.css
-        |       |     └-- layout.css
-        |       |--- js
-        |       |     |-- habit.js
-        |       |     └-- moment.js
-        |       |--- sass
-        |             |-- habit.scss
-        |             |-- home.scss
-        |             └-- layout.scss
-        |------ config
-        |         └--- mongoose.js
-        |------ controllers
-        |         └--- habit_controllers.js
-        |------ models
-        |         └--- habit.js
-        |------ routers
-        |         └--- index.js
-        |------ views
-        |         |--- habit..ejs
-        |         |--- home.ejs
-        |         └--- layout.ejs
-        |------ .gitignore
-        |------ app.js
-        |------ package.json
-        |------ package-lock.json
-        └------ README.md
+        |   .gitignore
+        |   home.PNG
+        |   index.js
+        |   package-lock.json
+        |   package.json
+        |   Readme.md
+        |   rotine.PNG
+        |
+        +---assets
+        |   +---css
+        |   |       home.css
+        |   |       _header.css
+        |   |
+        |   \---js
+        |           habit.js
+        |           home.js
+        |
+        +---config
+        |       mongoose.js
+        |
+        +---controllers
+        |       homeControllers.js
+        |
+        +---models
+        |       habit.js
+        |       habitDates.js
+        |
+        +---routes
+        |       index.js
+        |
+        \---views
+                habit.ejs
+                home.ejs
+                layout.ejs
+                _header.ejs
+
 
 Happy Coding :)
