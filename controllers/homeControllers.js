@@ -5,7 +5,7 @@ const moment = require("moment");
 module.exports.home = function (req, res) {
   Habit.find()
     .then(function (habits) {
-      console.log(habits)
+      // console.log(habits)
 
       return res.render("home", { title: "Home", habit_list: habits });
     })

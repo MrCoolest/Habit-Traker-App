@@ -20,15 +20,6 @@ app.use(expressEjsLayouts);
 app.set('layout extractStyles', true);
 app.set('layout extractScripts', true);
 
-
-
-// app.get('/', function (req, res) {
-//     console.log(__dirname);
-//     // res.send('<h1>Cool, It is Running on Port</h1>')
-
-//     return res.render('home', { title: 'My Contact List', name: 'Ankit Bhagwan Patwa' })
-// });
-
 // Use Express Router
 app.use('/',require('./routes'))
 
